@@ -70,7 +70,7 @@
     <p class="meta">
         <strong>App:</strong> KodeSnap<br />
         <strong>Package name:</strong> com.kodesnap.scanner<br />
-        <strong>Last updated:</strong> July 15, 2026
+        <strong>Last updated:</strong> September 27, 2026
     </p>
 
     <p>
@@ -80,8 +80,10 @@
     </p>
 
     <p>
-        <strong>Summary:</strong> KodeSnap is designed to work primarily on your device.
+        <strong>Summary:</strong> KodeSnap is designed to process scan content primarily on your device.
         We do not operate a user account system, and we do not upload your scan results to our own servers.
+        The App uses third-party advertising, analytics, crash reporting, consent-management, and
+        Google Play services that may collect or receive the technical and usage information described below.
     </p>
 
     <h2>1. Information We Process</h2>
@@ -101,6 +103,21 @@
         <li>
             <strong>App preferences</strong>, such as your selected display language.
         </li>
+        <li>
+            <strong>App activity and diagnostics</strong>, such as app launches, screens and features used,
+            scan type and source (but not the scanned content), session information, crash logs,
+            performance and error information.
+        </li>
+        <li>
+            <strong>Device, network, and advertising information</strong>, such as device model,
+            operating system and App version, language, approximate location derived from IP address,
+            IP address, advertising ID or other app/device identifiers, and ad impressions, clicks,
+            and other advertising interactions.
+        </li>
+        <li>
+            <strong>Privacy choices</strong>, including consent status and advertising privacy preferences
+            managed through Google's User Messaging Platform (UMP).
+        </li>
     </ul>
     <p>
         Scan results may contain sensitive information depending on what you scan—for example,
@@ -114,10 +131,15 @@
         <li>Provide core App features, including scanning, text recognition, and document scanning;</li>
         <li>Save and display your scan history;</li>
         <li>Let you preview, copy, share, or open scan results when you choose to do so;</li>
-        <li>Remember your in-app settings, such as language preference.</li>
+        <li>Remember your in-app settings, such as language preference;</li>
+        <li>Measure App usage, diagnose crashes and errors, and improve reliability;</li>
+        <li>Request, display, measure, secure, and prevent fraud relating to advertisements;</li>
+        <li>Comply with consent, privacy, legal, and regulatory obligations.</li>
     </ul>
     <p>
-        We do not use your scan content for advertising, and we do not sell your personal information.
+        We do not send your scan content to advertising or analytics providers, and we do not sell your
+        scan content. Google and its advertising partners may process device, network, identifier, consent,
+        and App interaction information to provide and measure ads as described in Section 5.
     </p>
 
     <h2>3. Where Data Is Stored</h2>
@@ -166,40 +188,74 @@
         <a href="https://policies.google.com/privacy" rel="noopener noreferrer" target="_blank">Google's Privacy Policy</a>.
     </p>
 
-    <h3>Google Firebase Analytics</h3>
+    <h3>Google AdMob and User Messaging Platform</h3>
     <p>
-        KodeSnap uses <strong>Google Firebase Analytics</strong>, a service provided by Google LLC
-        (1600 Amphitheatre Parkway, Mountain View, CA 94043, USA), to collect anonymous usage statistics
-        and help us improve the App. Firebase Analytics may collect the following data categories:
+        KodeSnap uses <strong>Google AdMob</strong> to display app-open, interstitial, and native advertisements,
+        and Google's <strong>User Messaging Platform (UMP)</strong> to request and record privacy choices where
+        required. Depending on your region, consent choices, device settings, and Google's configuration,
+        Google and participating advertising partners may process information including:
+    </p>
+    <ul>
+        <li>Advertising ID, app instance identifiers, and other device or app identifiers;</li>
+        <li>IP address and approximate location derived from IP address;</li>
+        <li>Device, operating system, App, browser, language, and network information;</li>
+        <li>Ad requests, impressions, views, clicks, and other ad interaction and diagnostic data;</li>
+        <li>Consent status and privacy choices;</li>
+        <li>Information used for fraud prevention, security, ad delivery, frequency capping, measurement, and reporting.</li>
+    </ul>
+    <p>
+        Ads may be personalized where permitted and where you have provided any consent required by law.
+        Otherwise, Google may serve non-personalized or limited ads. Non-personalized ads can still use
+        contextual information, coarse location, frequency capping, and fraud-prevention information.
+        Google and its partners process this information under their own terms and privacy policies.
+        For more information, see
+        <a href="https://policies.google.com/technologies/partner-sites" rel="noopener noreferrer" target="_blank">How Google uses information from sites or apps that use its services</a>,
+        <a href="https://policies.google.com/privacy" rel="noopener noreferrer" target="_blank">Google's Privacy Policy</a>, and
+        <a href="https://support.google.com/admob/answer/6128543" rel="noopener noreferrer" target="_blank">AdMob policies and restrictions</a>.
+    </p>
+    <p>
+        Where the UMP consent message is available, you can make choices in that message. You can also
+        delete or reset your Android advertising ID in your device's privacy settings. These choices may
+        reduce personalization, but they do not necessarily stop all advertising or all measurement,
+        security, and fraud-prevention processing.
+    </p>
+
+    <h3>Google Firebase Analytics and Crashlytics</h3>
+    <p>
+        KodeSnap uses <strong>Google Firebase Analytics</strong> and <strong>Firebase Crashlytics</strong>,
+        services provided by Google LLC (1600 Amphitheatre Parkway, Mountain View, CA 94043, USA),
+        to measure usage, diagnose crashes and errors, and improve the App. This information is generally
+        pseudonymous rather than anonymous. These services may collect the following data categories:
     </p>
     <ul>
         <li>Device information (device model, operating system version);</li>
         <li>App instance ID (a pseudonymous identifier unique to each App installation);</li>
         <li>App usage data (feature usage frequency, session duration, screens viewed);</li>
         <li>App version and first-launch timestamp;</li>
-        <li>Crash diagnostics (Firebase Crashlytics, if enabled).</li>
+        <li>Crash logs, stack traces, diagnostic state, and information related to crashes and errors.</li>
     </ul>
     <p>
-        This data is used solely for aggregated analytics to understand how the App is used and to
-        guide improvements. We do not use Firebase Analytics data for advertising or user profiling.
+        Our custom analytics events report categories such as scan mode, scan source, recognition language,
+        success or failure reason, result type, and result action. They do not include the barcode value,
+        recognized text, document image, or generated PDF content. We use this data to understand App usage,
+        improve features, and diagnose reliability issues; we do not use scan content for advertising.
     </p>
     <p>
-        <strong>Your choices:</strong> You can limit ad tracking at the device level through
-        <em>Settings > Privacy > Ads > Opt out of Ads Personalization</em> on your Android device,
-        which may affect how Firebase Analytics associates data with your device.
+        <strong>Your choices:</strong> Depending on your Android version, you can reset or delete your
+        advertising ID through your device's privacy and ads settings. Consent choices presented through
+        UMP apply as described in the message shown to you.
     </p>
     <p>
-        Google acts as a data processor on our behalf for Firebase Analytics. Google's handling
-        of this data is governed by
+        Google's handling of Firebase data is governed by our Google service configuration,
+        applicable Google terms, and
         <a href="https://policies.google.com/privacy" rel="noopener noreferrer" target="_blank">Google's Privacy Policy</a>.
     </p>
 
     <h4>International Data Transfers</h4>
     <p>
-        Firebase Analytics data is processed on servers located in the United States. For users in
-        the European Economic Area (EEA), Switzerland, and the United Kingdom, Google complies with
-        the EU–US Data Privacy Framework (DPF), the Swiss–US DPF, and the UK Extension to the EU–US
-        DPF as set forth by the US Department of Commerce. For additional details, see
+        Information processed by Google services may be transferred to and processed in countries outside
+        your country of residence, including the United States. For additional details about Google's
+        transfer mechanisms and certifications, see
         <a href="https://policies.google.com/privacy/frameworks" rel="noopener noreferrer" target="_blank">Google's Data Privacy Framework notice</a>.
     </p>
     <p>
@@ -246,10 +302,13 @@
     </p>
 
     <h2>8. Data Sharing</h2>
-    <p>We do not sell your personal information.</p>
+    <p>We do not sell your scan content. We do not receive money in exchange for selling personal information.</p>
     <p>We may share information only in these situations:</p>
     <ul>
         <li>When you intentionally share or open content using system or third-party apps;</li>
+        <li>With Google and advertising partners through AdMob and UMP for ad delivery, personalization where permitted, measurement, consent management, security, and fraud prevention;</li>
+        <li>With Google through Firebase Analytics and Crashlytics for analytics, diagnostics, and App improvement;</li>
+        <li>With Google-provided on-device or Play services components used for scanning and document processing;</li>
         <li>When required by applicable law or valid legal process;</li>
         <li>To protect the rights, safety, and security of users, us, or others, where permitted by law.</li>
     </ul>
@@ -258,6 +317,11 @@
     <p>
         We retain scan history and documents on your device until you delete them in the App,
         clear App data, or uninstall the App.
+    </p>
+    <p>
+        Third-party providers retain advertising, analytics, diagnostic, and consent information according
+        to their own retention settings and policies. We may retain aggregated or de-identified reports
+        for as long as reasonably necessary for analytics, security, legal compliance, and App improvement.
     </p>
 
     <h2>10. Security and Data Breach</h2>
@@ -288,9 +352,9 @@
             permission is automatically revoked when your sharing session ends.
         </li>
         <li>
-            <strong>Network communication:</strong> Any network requests made by the App (for example,
-            loading the privacy policy or Firebase Analytics) are transmitted over HTTPS to protect
-            data in transit.
+            <strong>Network communication:</strong> Network requests made by the App (for example,
+            loading the privacy policy, requesting ads and consent messages, or sending analytics and
+            crash diagnostics) use encrypted transport such as HTTPS where supported by the service.
         </li>
     </ul>
     <p>
@@ -317,23 +381,25 @@
     <ul>
         <li><strong>Access and correction:</strong> You can access and update your scan history within the App.</li>
         <li><strong>Deletion:</strong> You can delete scan history within the App, clear App data from device settings, or uninstall the App to remove locally stored data.</li>
-        <li><strong>Withdraw consent:</strong> You can revoke the Camera permission at any time through your device settings.</li>
+        <li><strong>Withdraw or change choices:</strong> You can revoke the Camera permission through device settings, manage choices through any privacy-options entry point presented by the App, and reset or delete your advertising ID through Android settings.</li>
     </ul>
     <p>
         <strong>For users in China (中华人民共和国):</strong> Under the Personal Information Protection Law (PIPL), you have the right to access, correct, and delete your personal information, and to withdraw your consent. We process your personal information as described in this policy. If you believe our handling of your personal information infringes your rights, you may file a complaint with the Cyberspace Administration of China (国家互联网信息办公室) via <a href="https://www.12377.cn" rel="noopener noreferrer" target="_blank">www.12377.cn</a> or by calling 12377.
     </p>
     <p>
-        <strong>For users in the European Economic Area (EEA):</strong> We process your personal data on the following legal bases: (a) <strong>Contract performance</strong> — to provide the scanning, text recognition, and document scanning features you request; (b) <strong>Consent</strong> — for camera access, which you can withdraw at any time through your device settings; (c) <strong>Legitimate interest</strong> — for anonymous analytics via Firebase Analytics to improve the App. Under the GDPR, you have the right to access, rectify, and erase your personal data, and to restrict or object to processing. You may lodge a complaint with your local data protection authority. A list of EEA data protection authorities is available at <a href="https://edpb.europa.eu/about-edpb/about-edpb/members_en" rel="noopener noreferrer" target="_blank">the European Data Protection Board's website</a>.
+        <strong>For users in the European Economic Area (EEA):</strong> Depending on the processing involved, we rely on: (a) <strong>contract performance</strong> — to provide the scanning, text recognition, and document scanning features you request; (b) <strong>consent</strong> — where required for advertising, analytics, device access, or storage/access to information on your device; (c) <strong>legitimate interests</strong> — such as App security, fraud prevention, diagnostics, and improvement where those interests are not overridden by your rights; and (d) <strong>legal obligations</strong>. Withholding or withdrawing optional consent does not prevent use of core scanning features, although some ads or measurements may operate differently. Under the GDPR, you may have rights to access, rectify, erase, restrict, object, withdraw consent, and receive portable data. You may lodge a complaint with your local data protection authority. A list of EEA data protection authorities is available at <a href="https://edpb.europa.eu/about-edpb/about-edpb/members_en" rel="noopener noreferrer" target="_blank">the European Data Protection Board's website</a>.
     </p>
     <p>
-        <strong>For users in California, USA:</strong> Under the California Consumer Privacy Act (CCPA), you have the right to know what personal information is collected, to request deletion, and to opt out of the sale of your personal information. We do not sell your personal information.
+        <strong>For users in California, USA:</strong> Subject to applicable exceptions, California law may give you rights to know, access, correct, and delete personal information, and to opt out of sale or sharing for cross-context behavioral advertising. We do not exchange personal information for money. Depending on how Google advertising services are configured, advertising-related disclosures may be considered "sharing" under California law; use the privacy choices made available through UMP or contact us to exercise applicable rights.
     </p>
     <h3>CCPA — Categories of Personal Information Collected (Past 12 Months)</h3>
     <ul>
         <li><strong>Identifiers:</strong> Firebase App Instance ID (a pseudonymous device-level identifier used for analytics).</li>
+        <li><strong>Identifiers used for advertising and security:</strong> Advertising ID, IP address, and related app/device identifiers processed by Google advertising services.</li>
         <li><strong>Internet or other electronic network activity information:</strong> In-app feature usage, session duration, screens viewed (collected via Firebase Analytics).</li>
         <li><strong>Geolocation data:</strong> Not collected by us. However, scanned barcode/QR content may contain location data if encoded by the content creator.</li>
         <li><strong>Sensory data:</strong> Images captured by the camera solely for scanning and text recognition, processed on-device and not transmitted to us.</li>
+        <li><strong>Commercial or advertising activity:</strong> Ad requests, impressions, views, clicks, and related measurement and fraud-prevention information processed by AdMob and its partners.</li>
     </ul>
     <p>To exercise any of these rights, contact us at the email address in Section 16.</p>
 
