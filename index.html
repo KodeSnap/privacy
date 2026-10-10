@@ -70,7 +70,7 @@
     <p class="meta">
         <strong>App:</strong> KodeSnap<br />
         <strong>Package name:</strong> com.kodesnap.scanner<br />
-        <strong>Last updated:</strong> September 27, 2026
+        <strong>Last updated:</strong> October 10, 2026
     </p>
 
     <p>
@@ -84,6 +84,8 @@
         We do not operate a user account system, and we do not upload your scan results to our own servers.
         The App uses third-party advertising, analytics, crash reporting, consent-management, and
         Google Play services that may collect or receive the technical and usage information described below.
+        When you scan a supported retail product barcode, the App also requests product information
+        from Open Food Facts as described in Section 5.
     </p>
 
     <h2>1. Information We Process</h2>
@@ -131,6 +133,7 @@
         <li>Provide core App features, including scanning, text recognition, and document scanning;</li>
         <li>Save and display your scan history;</li>
         <li>Let you preview, copy, share, or open scan results when you choose to do so;</li>
+        <li>Retrieve food product, nutrition, and ingredient information for supported retail product barcodes;</li>
         <li>Remember your in-app settings, such as language preference;</li>
         <li>Measure App usage, diagnose crashes and errors, and improve reliability;</li>
         <li>Request, display, measure, secure, and prevent fraud relating to advertisements;</li>
@@ -186,6 +189,23 @@
         Processing for these features generally occurs on your device or through Google-provided components
         on your device. Google's handling of data may be governed by
         <a href="https://policies.google.com/privacy" rel="noopener noreferrer" target="_blank">Google's Privacy Policy</a>.
+    </p>
+
+    <h3>Open Food Facts</h3>
+    <p>
+        After scanning a valid EAN or UPC product barcode, KodeSnap sends that product code,
+        the App language, and the App name/version to <strong>Open Food Facts</strong> to retrieve
+        product names, nutrition facts, ingredients, and related information. This lookup does not
+        send your other scan history, QR code contents, contacts, Wi-Fi contents, images, or documents.
+        As part of the network request, the service receives your IP address.
+    </p>
+    <p>
+        Product results are temporarily cached on your device, kept separate from the scan history
+        database, and excluded from Android system backup. The App limits requests and respects
+        server rate limits. Open Food Facts information is supplied by its community and may be
+        incomplete or inaccurate; verify the packaging, especially for allergens.
+        For the service's practices, see
+        <a href="https://world.openfoodfacts.org/privacy" rel="noopener noreferrer" target="_blank">Open Food Facts Privacy Policy</a>.
     </p>
 
     <h3>Google AdMob and User Messaging Platform</h3>
