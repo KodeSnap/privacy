@@ -70,7 +70,7 @@
     <p class="meta">
         <strong>App:</strong> KodeSnap<br />
         <strong>Package name:</strong> com.kodesnap.scanner<br />
-        <strong>Last updated:</strong> October 18, 2026
+        <strong>Last updated:</strong> October 28, 2026
     </p>
 
     <p>
@@ -81,7 +81,9 @@
 
     <p>
         <strong>Summary:</strong> KodeSnap is designed to process scan content primarily on your device.
-        We do not operate a user account system, and we do not upload your scan results to our own servers.
+        You do not need to register or sign in to use the App, and we do not automatically upload your scan results to our own servers.
+        If you choose to send feedback in Settings, your message, optional contact details, and
+        limited technical information are sent to us through Firebase as described below.
         The App uses third-party advertising, analytics, crash reporting, consent-management, and
         Google Play services that may collect or receive the technical and usage information described below.
         When you scan a supported retail product barcode, the App also requests product information
@@ -120,6 +122,13 @@
             <strong>Privacy choices</strong>, including consent status and advertising privacy preferences
             managed through Google's User Messaging Platform (UMP).
         </li>
+        <li>
+            <strong>Optional feedback:</strong> Only when you submit the feedback form, we receive
+            your message, any contact details you enter, App version, Android version, device
+            manufacturer/model, App language, and submission time. Firebase Authentication creates
+            or reuses a pseudonymous anonymous user ID to authorize the submission and limit abuse.
+            Scan results, images, documents, and logs are not automatically attached to feedback.
+        </li>
     </ul>
     <p>
         Scan results may contain sensitive information depending on what you scan—for example,
@@ -135,6 +144,7 @@
         <li>Let you preview, copy, share, or open scan results when you choose to do so;</li>
         <li>Retrieve food product, nutrition, and ingredient information for supported retail product barcodes;</li>
         <li>Remember your in-app settings, such as language preference;</li>
+        <li>Receive and respond to feedback, investigate reported problems, and prevent feedback abuse;</li>
         <li>Measure App usage, diagnose crashes and errors, and improve reliability;</li>
         <li>Request, display, measure, secure, and prevent fraud relating to advertisements;</li>
         <li>Comply with consent, privacy, legal, and regulatory obligations.</li>
@@ -149,7 +159,8 @@
     <p>
         Your scan history is stored locally in an on-device database.
         Document scans are saved as PDF files in the App's private app storage.
-        We do not transmit your scan content to our own servers.
+        We do not automatically transmit your scan content to our own servers.
+        If you include scan content in a feedback message, that text is sent as part of your message.
     </p>
     <p>
         <strong>Important — device backup:</strong> If you have Android device backup enabled
@@ -264,6 +275,21 @@
         <li><a href="https://bidmachine.io/privacy-policy/" rel="noopener noreferrer" target="_blank">BidMachine Privacy Policy</a></li>
     </ul>
 
+    <h3>Optional feedback through Firebase</h3>
+    <p>
+        The feedback form in Settings uses <strong>Firebase Authentication</strong> for anonymous
+        authorization and <strong>Cloud Firestore</strong> to store submissions in the Hong Kong
+        region (asia-east2). No sign-in screen or public profile is created. Google processes this
+        information on our behalf to deliver and store feedback and protect the service.
+    </p>
+    <p>
+        Submitting feedback is optional. You can use the App without sending any feedback, and
+        you can leave the contact field empty. The form explains the information sent before you
+        submit it. We use the message and technical details to handle support requests and improve
+        the App; contact details, when provided, allow us to respond. We do not use feedback for
+        advertising. Feedback is not publicly displayed or readable by other App users.
+    </p>
+
     <h3>Google Firebase Analytics and Crashlytics</h3>
     <p>
         KodeSnap uses <strong>Google Firebase Analytics</strong> and <strong>Firebase Crashlytics</strong>,
@@ -352,6 +378,7 @@
         <li>When you intentionally share or open content using system or third-party apps;</li>
         <li>With Google and advertising partners through AdMob and UMP for ad delivery, personalization where permitted, measurement, consent management, security, and fraud prevention;</li>
         <li>With Google through Firebase Analytics and Crashlytics for analytics, diagnostics, and App improvement;</li>
+        <li>With Google through Firebase Authentication and Cloud Firestore to authorize, deliver, store, and protect feedback that you choose to submit;</li>
         <li>With Google-provided on-device or Play services components used for scanning and document processing;</li>
         <li>When required by applicable law or valid legal process;</li>
         <li>To protect the rights, safety, and security of users, us, or others, where permitted by law.</li>
@@ -366,6 +393,15 @@
         Third-party providers retain advertising, analytics, diagnostic, and consent information according
         to their own retention settings and policies. We may retain aggregated or de-identified reports
         for as long as reasonably necessary for analytics, security, legal compliance, and App improvement.
+    </p>
+
+    <p>
+        Feedback and any contact details you submit are retained in Firestore for as long as
+        reasonably needed to handle the request, investigate issues, protect the service, and meet
+        applicable legal obligations. Uninstalling the App does not remove feedback already sent.
+        To request access, correction, or deletion, contact the email in Section 16 and include
+        enough information to locate your submission, such as its approximate date and message
+        or the contact details you provided.
     </p>
 
     <h2>10. Security and Data Breach</h2>
@@ -387,8 +423,14 @@
             the App cache from device settings.
         </li>
         <li>
-            <strong>No server transmission:</strong> Scanning and recognition results stay on your device.
-            We do not transmit your scan content to our own servers.
+            <strong>Scan content:</strong> Scanning and recognition results stay on your device unless
+            you choose to share them or include them in a feedback message. They are not
+            automatically attached to feedback.
+        </li>
+        <li>
+            <strong>Feedback protection:</strong> Feedback uses encrypted transport, anonymous
+            authentication, field validation, and submission limits. App clients cannot read, edit,
+            or delete stored feedback. Access through our support administration is restricted.
         </li>
         <li>
             <strong>Secure sharing:</strong> When you share files from the App, Android's FileProvider
@@ -425,6 +467,7 @@
     <ul>
         <li><strong>Access and correction:</strong> You can access and update your scan history within the App.</li>
         <li><strong>Deletion:</strong> You can delete scan history within the App, clear App data from device settings, or uninstall the App to remove locally stored data.</li>
+        <li><strong>Feedback:</strong> Sending feedback and providing contact details are optional. For access, correction, or deletion of submitted feedback, contact us as described in Section 9.</li>
         <li><strong>Withdraw or change choices:</strong> You can revoke the Camera permission through device settings, manage choices through any privacy-options entry point presented by the App, and reset or delete your advertising ID through Android settings.</li>
     </ul>
     <p>
@@ -439,6 +482,7 @@
     <h3>CCPA — Categories of Personal Information Collected (Past 12 Months)</h3>
     <ul>
         <li><strong>Identifiers:</strong> Firebase App Instance ID (a pseudonymous device-level identifier used for analytics).</li>
+        <li><strong>Feedback and contact details:</strong> Messages you submit, optional email addresses or other contact details, technical metadata, and the pseudonymous Firebase user ID used to authorize feedback and limit abuse.</li>
         <li><strong>Identifiers used for advertising and security:</strong> Advertising ID, IP address, and related app/device identifiers processed by Google advertising services and participating mediation partners.</li>
         <li><strong>Internet or other electronic network activity information:</strong> In-app feature usage, session duration, screens viewed (collected via Firebase Analytics).</li>
         <li><strong>Geolocation data:</strong> Not collected by us. However, scanned barcode/QR content may contain location data if encoded by the content creator.</li>
@@ -451,7 +495,7 @@
     <p>
         KodeSnap is operated by <strong>chanwingchow</strong> from the People's Republic of China.
         If you use the App from outside that location, your information remains primarily on your device,
-        except where device backup, Google services (including Firebase Analytics), participating advertising providers, or your own sharing actions apply.
+        except where optional feedback, device backup, Google services (including Firebase Analytics), participating advertising providers, or your own sharing actions apply.
         When data is transferred internationally through these mechanisms, we ensure that the recipients
         comply with applicable data protection laws, including through the EU–US Data Privacy Framework
         (as described in Section 5) or equivalent safeguards.
